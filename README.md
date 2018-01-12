@@ -1,8 +1,8 @@
-# my-project
+# vue-project
 
-> 基于vue mint-ui搭建的移动H5框架
+> 基于vue+webpack+mint-ui搭建的H5框架
 
-## Build Setup
+## 项目安装相关指令
 
 ``` bash
 # install dependencies
@@ -24,26 +24,31 @@ npm run build --report
     ├── dist                                发布环境
     ├── node-modules                        node依赖库
     ├── src                                 源代码
-    │    ├── assets                         资源目录
-    │    │   ├── css                        层叠样式  
-    │    │   ├── images                     图片  
+    │    ├── assets                        资源目录
+    │    │   ├── css                       层叠样式
+    │    │   ├── images                    图片
     │    ├── components                     所有组件文件
-    │    │   ├── common                     可复用的公用的组件（主要是类似header,footer）
-    │    │   ├── pages                      应用的页面
-    │    │   │   ├── ...                    其他页面
+    │    │   ├── ...
     │    ├── router                         路由js文件
+    │    ├── store                          Vuex状态管理
+    │    │   ├── ...
     │    ├── utils                          自定义公用的方法封装
-    │    │     │   
-    │    │     ├── api.js                   所有的自定义指令
+    │    │     │
+    │    │     ├── api.js                  所有的自定义指令
     │    │     │   ├── ...
-    │    │     ├── cookie.js                所有的自定义filter
+    │    │     ├── bus.js                  简单组件通信总线
     │    │     │   ├── ...
-    │    │     ├── util.js                  自定义拦截器
+    │    │     ├── cookie.js               所有的自定义filter
+    │    │     │   ├── ...
+    │    │     ├── util.js                 自定义拦截器
     │    │     ├── ...
-    │    ├── app.vue                        入口组件
-    │    ├── main.js                        入口函数
+    │    ├── app.vue                       入口组件
+    │    ├── main.js                       入口函数
     ├── static                              静态资源
+    │    ├── mui                           mint-UI、iconfont等插件存放处
+    │    ├── ...                           资源目录
     ├── package.json                        npm包描述文件
+    ├── package-lock.json                   控制npm更新依赖，往往会造成很多不便，可删除
     ├── index.html                          html
     ├── README.md                           项目描述
     └──
