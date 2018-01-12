@@ -1,0 +1,70 @@
+.query_conditions_wrapper {
+  position: fixed;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #fff;
+  box-shadow: 0 10px 10px -10px #999;
+  z-index: 99;
+}
+
+.query_conditions_wrapper .query_condition_item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.query_conditions_wrapper .query_condition_item label {
+  flex: 0 0 1;
+  display: flex;
+  align-items: flex-end;
+  width: 80px;
+  font-size: 12px;
+}
+
+.query_conditions_wrapper .query_condition_item input {
+  flex: 1;
+  margin: 0;
+  padding: 0 0 0 5px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #c8c7cc;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.query_conditions_wrapper .query_condition_item div {
+  flex: 1;
+}
+
+.mint-button {
+  margin: 10px auto 0;
+  height: 30px;
+  font-size: 12px;
+}
+
+.query_conditions_wrapper .query_select_wrapper div {
+  position: relative;
+}
+
+.query_conditions_wrapper .query_select_wrapper div i {
+  position: absolute;
+  bottom: 13px;
+  right: 3px;
+  content: "";
+  border: 4px solid #2c3e50;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.query_conditions_wrapper .query_select_wrapper div span {
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  font-size: 18px;
+}
+
+.query_conditions_wrapper .query_select_wrapper div:nth-child(2) {
+  margin-right: 10px;
+}
+
+
